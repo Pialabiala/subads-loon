@@ -8,6 +8,8 @@
 [Rule]
 # 站内广告列表接口（响应为应用层加密数据，按 URL 精确拦截）
 URL-REGEX,^https?://sublifeapp\.com/fem/api/advertisement/findList(?:\?|$),REJECT
+URL-REGEX,^https?://webcast-open\.douyin\.com/webcast/openapi/pangle/setting(?:/|\?|$),REJECT
+URL-REGEX,^https?://lf-cdn-tos\.bytescm\.com/obj/static/ad/play-comp/playable-component-sdk/,REJECT
 
 # HAR 中实际出现的广告 SDK / 广告投放域名
 DOMAIN,inner.hzzfcm.com,REJECT
